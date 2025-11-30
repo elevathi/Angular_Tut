@@ -64,7 +64,7 @@
           },
           "defaultConfiguration": "development"
         },
-        "test": {
+        "test": { 
           "builder": "@angular/build:unit-test"
         }
       }
