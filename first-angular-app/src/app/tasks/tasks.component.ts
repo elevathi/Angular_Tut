@@ -20,15 +20,11 @@ export class TasksComponent {
   get selectedUserTasks() {
     return this.tasksService.getUserTasks(this.userId);
   }
-  onTaskComplete(id: string) {}
+
   onStartAddTask() {
     this.isAddingTask = true;
   }
-  onCancleAddTask() {
+  onCloseAddTask() {
     this.isAddingTask = false;
-  }
-  onAddTask(taskData: NewTaskData) {
-    this.isAddingTask = false
-    
   }
 }
