@@ -8,6 +8,7 @@
         <input
           class="form-control"
           id="initial-investement"
+          name="initial-investement"
           type="number"
           [(ngModel)]="enteredInitialInvestment"
         />
@@ -19,6 +20,7 @@
         <input
           class="form-control"
           id="annual-investment"
+          name="annual-investment"
           type="number"
           [(ngModel)]="enteredAnnualInvestments"
         />
@@ -32,6 +34,7 @@
         <input
           class="form-control"
           id="expected-return"
+          name="expected-return"
           type="number"
           [(ngModel)]="enteredExpectedReturn"
         />
@@ -41,13 +44,14 @@
         <input
           class="form-control"
           id="duration"
+          name="duration"
           type="number"
           [(ngModel)]="enteredDuration"
         />
       </p>
     </div>
     <p>
-      <button class="btn btn-primary" type="submit">Calculate</button>
+      <button class="btn btn-primary">Calculate</button>
     </p>
   </form>
 </div>

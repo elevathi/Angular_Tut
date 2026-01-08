@@ -14,5 +14,9 @@ export class UserInputComponent {
   enteredDuration = '10';
   onSubmit(){
     console.log("Submitted");
+    console.log(this.enteredInitialInvestment);
+    console.log(this.enteredAnnualInvestments);
+    console.log(this.enteredExpectedReturn);
+    console.log(this.enteredDuration);
   }
 }
