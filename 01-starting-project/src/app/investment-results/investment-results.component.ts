@@ -2,7 +2,6 @@ import { Component, Input } from '@angular/core';
 import { InvestmentResults } from '../investment-result.model';
 import { CurrencyPipe } from '@angular/common';
 
-
 @Component({
   selector: 'app-investment-results',
   imports: [CurrencyPipe],
