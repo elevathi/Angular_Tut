@@ -18,16 +18,16 @@
         {{ result.year }}
       </td>
       <td>
-        {{ result.valueEndOfYear | currency }}
+        {{ result.valueEndOfYear | currency:"EUR" }}
       </td>
       <td>
-        {{ result.interest | currency }}
+        {{ result.interest | currency:"EUR" }}
       </td>
       <td>
-        {{ result.totalInterest | currency }}
+        {{ result.totalInterest | currency:"EUR" }}
       </td>
       <td>
-        {{ result.totalAmountInvested | currency }}
+        {{ result.totalAmountInvested | currency:"EUR" }}
       </td>
     </tr>
     }
