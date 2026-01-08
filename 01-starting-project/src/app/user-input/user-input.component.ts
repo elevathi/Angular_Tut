@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-user-input',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './user-input.component.html',
   styleUrl: './user-input.component.css',
 })
 export class UserInputComponent {
-
+  enteredInitialInvestment = '0';
+  enteredAnnualInvestments = '0';
+  enteredExpectedReturn = '5';
+  enteredDuration = '10';
+  onSubmit(){
+    console.log("Submitted");
+  }
 }

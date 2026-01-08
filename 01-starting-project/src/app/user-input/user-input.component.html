@@ -1,17 +1,27 @@
 <div class="container text-center d-flex justify-content-center">
-  <form>
+  <form (ngSubmit)="onSubmit()">
     <div class="input-group mb-3">
       <p>
         <label class="form-label" for="initial-investement"
           >Initial Investment</label
         >
-        <input class="form-control" id="initial-investement" type="number" />
+        <input
+          class="form-control"
+          id="initial-investement"
+          type="number"
+          [(ngModel)]="enteredInitialInvestment"
+        />
       </p>
       <p>
         <label class="form-label" for="annual-investment"
           >Annual Investment</label
         >
-        <input class="form-control" id="annual-investment" type="number" />
+        <input
+          class="form-control"
+          id="annual-investment"
+          type="number"
+          [(ngModel)]="enteredAnnualInvestments"
+        />
       </p>
     </div>
     <div class="input-group mb-3">
@@ -19,15 +29,25 @@
         <label class="form-label" for="expected-return"
           >Expected Return Rate</label
         >
-        <input class="form-control" id="expected-return" type="number" />
+        <input
+          class="form-control"
+          id="expected-return"
+          type="number"
+          [(ngModel)]="enteredExpectedReturn"
+        />
       </p>
       <p>
         <label class="form-label" for="duration">Duration</label>
-        <input class="form-control" id="duration" type="number" />
+        <input
+          class="form-control"
+          id="duration"
+          type="number"
+          [(ngModel)]="enteredDuration"
+        />
       </p>
     </div>
     <p>
-      <input class="btn btn-primary" type="submit" value="Calculate"/>
+      <button class="btn btn-primary" type="submit">Calculate</button>
     </p>
   </form>
 </div>
