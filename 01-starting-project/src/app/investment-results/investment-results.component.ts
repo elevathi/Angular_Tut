@@ -10,6 +10,6 @@ import { InvestmentService } from '../investment.service';
   styleUrl: './investment-results.component.css',
 })
 export class InvestmentResultsComponent {
- constructor(private investmentService: InvestmentService){}
-  results = computed(()=>this.investmentService.resultData());
+  constructor(private investmentService: InvestmentService) {}
+  results = computed(() => this.investmentService.resultData());
 }
